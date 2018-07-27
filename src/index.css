@@ -1,4 +1,13 @@
+/*
+#FF6646
+#B6EBBD
+#1B416B
+#EDC494
+#4F280B
+*/
+
 @import url('https://fonts.googleapis.com/css?family=Questrial');
+
 .App {
   margin: 0;
   padding: 5%;
@@ -8,28 +17,23 @@
 }
 
 @font-face {
-    font-family: 'Skinno';
-    src: url('./TypoGraphica_demo.otf');
+  font-family: 'Skinno';
+  src: url('./TypoGraphica_demo.otf');
 }
 
-/*
-#FF6646
-#B6EBBD
-#1B416B
-#EDC494
-#4F280B
-*/
-#logo{
-		font-family: 'Skinno';
-		font-size: 3em;
-		font-weight: lighter;
-		text-align: center;
+
+
+#logo {
+  font-family: 'Skinno';
+  font-size: 3em;
+  font-weight: lighter;
+  text-align: center;
 }
+
 nav {
   background-color: #1B416B;
   overflow: hidden;
   padding: 1em;
-
 }
 
 a {
@@ -55,8 +59,6 @@ a {
   display: inline-block;
   padding: 0 2em;
 }
-
-
 
 body {
   margin: 0;
@@ -97,7 +99,7 @@ a:hover {
   font-weight: 200;
   font-size: 30px;
   letter-spacing: 4px;
-	font-family: 'Questrial', sans-serif;
+  font-family: 'Questrial', sans-serif;
 }
 
 /* Post Styles */
@@ -108,13 +110,13 @@ a:hover {
   width: 70%;
   margin: 40px auto;
   box-shadow: 0 5px 15px 0 rgba(46, 61, 73, 0.12);
-	font-family: 'Questrial', sans-serif;
+  font-family: 'Questrial', sans-serif;
 }
 
 .post_heading {
   text-align: center;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 30px;
   color: #636363;
 }
 
@@ -123,7 +125,7 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-	  font-family: 'Questrial', sans-serif;
+  font-family: 'Questrial', sans-serif;
 }
 
 .form input {
@@ -137,7 +139,7 @@ a:hover {
   box-shadow: 0 2px 2px 0 rgba(46, 60, 73, 0.05);
   outline: none;
   width: 80%;
-	  font-family: 'Questrial', sans-serif;
+  font-family: 'Questrial', sans-serif;
 }
 
 .form textarea {
@@ -150,7 +152,7 @@ a:hover {
   font-size: 14px;
   border-radius: 2px;
   color: #636363;
-	font-family: 'Questrial', sans-serif;
+  font-family: 'Questrial', sans-serif;
   box-shadow: 0 2px 2px 0 rgba(46, 60, 73, 0.05);
   outline: none;
 }
@@ -160,7 +162,7 @@ a:hover {
 .all_post_heading {
   text-align: center;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 30px;
   color: #636363;
   word-wrap: break-word;
 }
@@ -179,10 +181,24 @@ a:hover {
   padding: 15px 40px;
   text-align: center;
   color: #B6EBBD;
-	font-family: 'Questrial', sans-serif;
+  font-family: 'Questrial', sans-serif;
   border-radius: 4px;
   border: none;
   font-size: 20px;
+  transition: .1s;
+}
+
+.form button:hover {
+  background: #B6EBBD;
+  padding: 15px 40px;
+  text-align: center;
+  color: #1B416B;
+  font-family: 'Questrial', sans-serif;
+  border-radius: 4px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: .1s;
 }
 
 .post_title {
@@ -191,6 +207,7 @@ a:hover {
   font-size: 40px;
   color: #636363;
   word-wrap: break-word;
+  margin: 1%;
 }
 
 .post_message {
@@ -198,7 +215,8 @@ a:hover {
   font-weight: 200;
   line-height: 2.5rem;
   text-align: center;
-  word-wrap: break-word
+  word-wrap: break-word;
+  margin: 1%;
 }
 
 .control-buttons {
@@ -206,26 +224,57 @@ a:hover {
 }
 
 .delete {
+  background: #fff;
+  border: none;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px 25px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  color: #FF6646;
+  border: 1px solid #FF6646;
+  transition: .1s;
+}
+
+.delete:hover {
   background: #FF6646;
   border: none;
   text-align: center;
-  font-size: 20px;
   padding: 10px 25px;
-  border-radius: 20px;
+  border-radius: 4px;
   cursor: pointer;
   outline: none;
   color: #fff;
+  border: 1px solid #fff;
+  transition: .1s;
 }
 
 .edit {
+  background: #fff;
+  border: none;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px 25px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: auto;
+  outline: none;
+  color: #1B416B;
+  border: 1px solid #1B416B;
+  transition: .1s;
+}
+
+.edit:hover {
   background: #1B416B;
   border: none;
   text-align: center;
-  font-size: 20px;
   padding: 10px 25px;
-  border-radius: 20px;
+  border-radius: 4px;
   cursor: pointer;
   margin-right: auto;
   outline: none;
   color: #fff;
+  border: 1px solid #fff;
+  transition: .1s;
 }
